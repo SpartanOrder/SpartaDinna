@@ -36,14 +36,13 @@ public class TestAction extends ActionSupport implements ServletRequestAware {
 		if (floor == null) {
 			System.out.println("floor空");
 		}
-		floor.setFloorName("香满楼");
+		floor.setFloorName("福满楼");
 		Session session = sessionFactory.openSession();
 		session.beginTransaction();
 		session.saveOrUpdate(floor);
 		session.getTransaction().commit();
 		session.close();
 		System.out.println("进来了，成功保存");
-
 		return SUCCESS;
 	}
 

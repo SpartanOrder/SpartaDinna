@@ -14,6 +14,6 @@ import javax.persistence.Table;
 @Entity
 @DiscriminatorValue("超级管理员")
 @Table
-public class Adminstrator extends ManagerPerson {
+public class Adminstrator extends Person {
 
 }

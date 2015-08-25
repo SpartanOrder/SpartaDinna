@@ -14,6 +14,6 @@ import javax.persistence.Table;
 @Entity
 @Table
 @DiscriminatorValue("服务员")
-public class Waiter extends ServerPerson {
-	
+public class Waiter extends Person {
+
 }

@@ -4,11 +4,10 @@
 package com.sparta.dinna.entity.user;
 
 import javax.persistence.Column;
+import javax.persistence.DiscriminatorColumn;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
-import javax.persistence.Inheritance;
-import javax.persistence.InheritanceType;
 import javax.persistence.Table;
 
 import org.hibernate.annotations.GenericGenerator;
@@ -22,23 +21,25 @@ import org.hibernate.annotations.GenericGenerator;
  */
 @Entity
 @Table
-@Inheritance(strategy = InheritanceType.TABLE_PER_CLASS)
+@DiscriminatorColumn(name = "personType")
 public class Person {
 	@Id
 	// 由于不能使用identity主键生成策略，故此处采用hilo逐渐生成策略
 	@GenericGenerator(name = "person_hilo", strategy = "hilo")
 	@GeneratedValue(generator = "person_hilo")
-	public String personId;// 用户ID
+	private String personId;// 用户ID
 	@Column(unique = true)
-	public String personName;// 用户名
-	public String personPass;// 用户密码
-	public String personRealName;// 用户真实姓名
-	public Boolean sex;// 用户性别
+	private String personName;// 用户名
+	private String personPass;// 用户密码
+	private String personRealName;// 用户真实姓名
+	private Boolean sex;// 用户性别
 	@Column(unique = true)
-	public String identityCard;// 用户身份证
+	private String identityCard;// 用户身份证
 	@Column(unique = true)
-	public String telphone;// 用户电话
-	public String description;// 个人描述
+	private String telphone;// 用户电话
+
+	private Role role;// 用户角色
+	private String description;// 个人描述
 
 	public Person() {
 		// TODO Auto-generated constructor stub
