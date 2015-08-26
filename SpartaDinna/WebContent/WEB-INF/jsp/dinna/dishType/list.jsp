@@ -37,7 +37,13 @@
 			
 				<th><a href="javascript:sort('dishTypeName')">dishTypeName</a></th>
 			
-				<th><a href="javascript:sort('description')">description</a></th>
+				<th><a href="javascript:sort('dishTypeDesc')">dishTypeDesc</a></th>
+			
+				<th><a href="javascript:sort('delFlag')">delFlag</a></th>
+			
+				<th><a href="javascript:sort('lastSubTime')">lastSubTime</a></th>
+			
+				<th><a href="javascript:sort('subBy')">subBy</a></th>
 			
 				<th>插入时间</th>
               	<th>修改时间</th>
@@ -50,7 +56,13 @@
 				
 					<td>${entity.dishTypeName}</td>
 				
-					<td>${entity.description}</td>
+					<td>${entity.dishTypeDesc}</td>
+				
+					<td>${entity.delFlag}</td>
+				
+					<td>${entity.lastSubTime}</td>
+				
+					<td>${entity.subBy}</td>
 				
 					<td>${entity.insertTime}</td>
                 	<td>${entity.lastUpdateTime}</td>

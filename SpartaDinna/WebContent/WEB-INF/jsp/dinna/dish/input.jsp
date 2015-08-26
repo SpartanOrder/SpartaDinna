@@ -12,7 +12,7 @@
 		//为inputForm注册validate函数
 		$("#inputForm").validate({
 			rules: {
-				dishId:"required",dishName:"required",dishPrice:"required",dishType:"required",description:"required",cooking:"required",imgURL:"required",visiable:"required"	
+				dishId:"required",dishTypeId:"required",dishName:"required",dishSpeel:"required",dishCost:"required",dishUnit:"required",dishPrice:"required",dishDescription:"required",dishCooking:"required",dishImgUrl:"required",delFlag:"required",lastSubTime:"required",subBy:"required"	
 			}
 		});
 	});
@@ -39,8 +39,28 @@
 		        </tr>
 		        
 		        <tr>
+		          <td>dishTypeId:</td>
+		          <td><input id="dishTypeId" name="dishTypeId" type="text" value="${dish.dishTypeId}" size="30" maxlength="80" /></td>
+		        </tr>
+		        
+		        <tr>
 		          <td>dishName:</td>
 		          <td><input id="dishName" name="dishName" type="text" value="${dish.dishName}" size="30" maxlength="80" /></td>
+		        </tr>
+		        
+		        <tr>
+		          <td>dishSpeel:</td>
+		          <td><input id="dishSpeel" name="dishSpeel" type="text" value="${dish.dishSpeel}" size="30" maxlength="80" /></td>
+		        </tr>
+		        
+		        <tr>
+		          <td>dishCost:</td>
+		          <td><input id="dishCost" name="dishCost" type="text" value="${dish.dishCost}" size="30" maxlength="80" /></td>
+		        </tr>
+		        
+		        <tr>
+		          <td>dishUnit:</td>
+		          <td><input id="dishUnit" name="dishUnit" type="text" value="${dish.dishUnit}" size="30" maxlength="80" /></td>
 		        </tr>
 		        
 		        <tr>
@@ -49,28 +69,33 @@
 		        </tr>
 		        
 		        <tr>
-		          <td>dishType:</td>
-		          <td><input id="dishType" name="dishType" type="text" value="${dish.dishType}" size="30" maxlength="80" /></td>
+		          <td>dishDescription:</td>
+		          <td><input id="dishDescription" name="dishDescription" type="text" value="${dish.dishDescription}" size="30" maxlength="80" /></td>
 		        </tr>
 		        
 		        <tr>
-		          <td>description:</td>
-		          <td><input id="description" name="description" type="text" value="${dish.description}" size="30" maxlength="80" /></td>
+		          <td>dishCooking:</td>
+		          <td><input id="dishCooking" name="dishCooking" type="text" value="${dish.dishCooking}" size="30" maxlength="80" /></td>
 		        </tr>
 		        
 		        <tr>
-		          <td>cooking:</td>
-		          <td><input id="cooking" name="cooking" type="text" value="${dish.cooking}" size="30" maxlength="80" /></td>
+		          <td>dishImgUrl:</td>
+		          <td><input id="dishImgUrl" name="dishImgUrl" type="text" value="${dish.dishImgUrl}" size="30" maxlength="80" /></td>
 		        </tr>
 		        
 		        <tr>
-		          <td>imgURL:</td>
-		          <td><input id="imgURL" name="imgURL" type="text" value="${dish.imgURL}" size="30" maxlength="80" /></td>
+		          <td>delFlag:</td>
+		          <td><input id="delFlag" name="delFlag" type="text" value="${dish.delFlag}" size="30" maxlength="80" /></td>
 		        </tr>
 		        
 		        <tr>
-		          <td>visiable:</td>
-		          <td><input id="visiable" name="visiable" type="text" value="${dish.visiable}" size="30" maxlength="80" /></td>
+		          <td>lastSubTime:</td>
+		          <td><input id="lastSubTime" name="lastSubTime" type="text" value="${dish.lastSubTime}" size="30" maxlength="80" /></td>
+		        </tr>
+		        
+		        <tr>
+		          <td>subBy:</td>
+		          <td><input id="subBy" name="subBy" type="text" value="${dish.subBy}" size="30" maxlength="80" /></td>
 		        </tr>
 		        
 		        <tr>

@@ -12,7 +12,7 @@
 		//为inputForm注册validate函数
 		$("#inputForm").validate({
 			rules: {
-				customerId:"required",customerName:"required",customerIDcard:"required",customerTel:"required"	
+				customerId:"required",customerName:"required",customerTel:"required",customerGender:"required",delFlag:"required",lastSubTime:"required",subBy:"required"	
 			}
 		});
 	});
@@ -44,13 +44,28 @@
 		        </tr>
 		        
 		        <tr>
-		          <td>customerIDcard:</td>
-		          <td><input id="customerIDcard" name="customerIDcard" type="text" value="${customer.customerIDcard}" size="30" maxlength="80" /></td>
+		          <td>customerTel:</td>
+		          <td><input id="customerTel" name="customerTel" type="text" value="${customer.customerTel}" size="30" maxlength="80" /></td>
 		        </tr>
 		        
 		        <tr>
-		          <td>customerTel:</td>
-		          <td><input id="customerTel" name="customerTel" type="text" value="${customer.customerTel}" size="30" maxlength="80" /></td>
+		          <td>customerGender:</td>
+		          <td><input id="customerGender" name="customerGender" type="text" value="${customer.customerGender}" size="30" maxlength="80" /></td>
+		        </tr>
+		        
+		        <tr>
+		          <td>delFlag:</td>
+		          <td><input id="delFlag" name="delFlag" type="text" value="${customer.delFlag}" size="30" maxlength="80" /></td>
+		        </tr>
+		        
+		        <tr>
+		          <td>lastSubTime:</td>
+		          <td><input id="lastSubTime" name="lastSubTime" type="text" value="${customer.lastSubTime}" size="30" maxlength="80" /></td>
+		        </tr>
+		        
+		        <tr>
+		          <td>subBy:</td>
+		          <td><input id="subBy" name="subBy" type="text" value="${customer.subBy}" size="30" maxlength="80" /></td>
 		        </tr>
 		        
 		        <tr>

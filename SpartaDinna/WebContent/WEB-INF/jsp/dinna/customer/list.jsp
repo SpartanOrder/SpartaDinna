@@ -37,9 +37,15 @@
 			
 				<th><a href="javascript:sort('customerName')">customerName</a></th>
 			
-				<th><a href="javascript:sort('customerIDcard')">customerIDcard</a></th>
-			
 				<th><a href="javascript:sort('customerTel')">customerTel</a></th>
+			
+				<th><a href="javascript:sort('customerGender')">customerGender</a></th>
+			
+				<th><a href="javascript:sort('delFlag')">delFlag</a></th>
+			
+				<th><a href="javascript:sort('lastSubTime')">lastSubTime</a></th>
+			
+				<th><a href="javascript:sort('subBy')">subBy</a></th>
 			
 				<th>插入时间</th>
               	<th>修改时间</th>
@@ -52,9 +58,15 @@
 				
 					<td>${entity.customerName}</td>
 				
-					<td>${entity.customerIDcard}</td>
-				
 					<td>${entity.customerTel}</td>
+				
+					<td>${entity.customerGender}</td>
+				
+					<td>${entity.delFlag}</td>
+				
+					<td>${entity.lastSubTime}</td>
+				
+					<td>${entity.subBy}</td>
 				
 					<td>${entity.insertTime}</td>
                 	<td>${entity.lastUpdateTime}</td>

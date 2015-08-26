@@ -34,7 +34,7 @@
 		<property name="hibernateProperties">
 			<props>
 				<!-- 制定Hibernate的连接方言 -->
-				<prop key="hibernate.dialect">org.hibernate.dialect.MySQL5InnoDBDialect</prop>
+				<prop key="hibernate.dialect">org.hibernate.dialect.MySQLDialect</prop>
 				<!-- 是否显示更多的sql语句 -->
 				<prop key="hibernate.show_sql">true</prop>
 				<!-- 是否根据Hibernate映射创建数据表 -->

@@ -35,19 +35,29 @@
             <tr class="line">
 				<th><a href="javascript:sort('dishId')">dishId</a></th>
 			
+				<th><a href="javascript:sort('dishTypeId')">dishTypeId</a></th>
+			
 				<th><a href="javascript:sort('dishName')">dishName</a></th>
+			
+				<th><a href="javascript:sort('dishSpeel')">dishSpeel</a></th>
+			
+				<th><a href="javascript:sort('dishCost')">dishCost</a></th>
+			
+				<th><a href="javascript:sort('dishUnit')">dishUnit</a></th>
 			
 				<th><a href="javascript:sort('dishPrice')">dishPrice</a></th>
 			
-				<th><a href="javascript:sort('dishType')">dishType</a></th>
+				<th><a href="javascript:sort('dishDescription')">dishDescription</a></th>
 			
-				<th><a href="javascript:sort('description')">description</a></th>
+				<th><a href="javascript:sort('dishCooking')">dishCooking</a></th>
 			
-				<th><a href="javascript:sort('cooking')">cooking</a></th>
+				<th><a href="javascript:sort('dishImgUrl')">dishImgUrl</a></th>
 			
-				<th><a href="javascript:sort('imgURL')">imgURL</a></th>
+				<th><a href="javascript:sort('delFlag')">delFlag</a></th>
 			
-				<th><a href="javascript:sort('visiable')">visiable</a></th>
+				<th><a href="javascript:sort('lastSubTime')">lastSubTime</a></th>
+			
+				<th><a href="javascript:sort('subBy')">subBy</a></th>
 			
 				<th>插入时间</th>
               	<th>修改时间</th>
@@ -58,19 +68,29 @@
               	
 					<td>${entity.dishId}</td>
 				
+					<td>${entity.dishTypeId}</td>
+				
 					<td>${entity.dishName}</td>
+				
+					<td>${entity.dishSpeel}</td>
+				
+					<td>${entity.dishCost}</td>
+				
+					<td>${entity.dishUnit}</td>
 				
 					<td>${entity.dishPrice}</td>
 				
-					<td>${entity.dishType}</td>
+					<td>${entity.dishDescription}</td>
 				
-					<td>${entity.description}</td>
+					<td>${entity.dishCooking}</td>
 				
-					<td>${entity.cooking}</td>
+					<td>${entity.dishImgUrl}</td>
 				
-					<td>${entity.imgURL}</td>
+					<td>${entity.delFlag}</td>
 				
-					<td>${entity.visiable}</td>
+					<td>${entity.lastSubTime}</td>
+				
+					<td>${entity.subBy}</td>
 				
 					<td>${entity.insertTime}</td>
                 	<td>${entity.lastUpdateTime}</td>

@@ -12,7 +12,7 @@
 		//为inputForm注册validate函数
 		$("#inputForm").validate({
 			rules: {
-				dishTypeId:"required",dishTypeName:"required",description:"required"	
+				dishTypeId:"required",dishTypeName:"required",dishTypeDesc:"required",delFlag:"required",lastSubTime:"required",subBy:"required"	
 			}
 		});
 	});
@@ -44,8 +44,23 @@
 		        </tr>
 		        
 		        <tr>
-		          <td>description:</td>
-		          <td><input id="description" name="description" type="text" value="${dishType.description}" size="30" maxlength="80" /></td>
+		          <td>dishTypeDesc:</td>
+		          <td><input id="dishTypeDesc" name="dishTypeDesc" type="text" value="${dishType.dishTypeDesc}" size="30" maxlength="80" /></td>
+		        </tr>
+		        
+		        <tr>
+		          <td>delFlag:</td>
+		          <td><input id="delFlag" name="delFlag" type="text" value="${dishType.delFlag}" size="30" maxlength="80" /></td>
+		        </tr>
+		        
+		        <tr>
+		          <td>lastSubTime:</td>
+		          <td><input id="lastSubTime" name="lastSubTime" type="text" value="${dishType.lastSubTime}" size="30" maxlength="80" /></td>
+		        </tr>
+		        
+		        <tr>
+		          <td>subBy:</td>
+		          <td><input id="subBy" name="subBy" type="text" value="${dishType.subBy}" size="30" maxlength="80" /></td>
 		        </tr>
 		        
 		        <tr>
