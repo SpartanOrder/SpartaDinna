@@ -2,11 +2,13 @@ package com.sparta.dinna.entity;
 
 // Generated 2015-8-25 18:03:24 by Hibernate Tools 4.3.1
 
+import static javax.persistence.GenerationType.IDENTITY;
+
 import java.util.Date;
+
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
-import static javax.persistence.GenerationType.IDENTITY;
 import javax.persistence.Id;
 import javax.persistence.Table;
 import javax.persistence.Temporal;
@@ -135,6 +137,12 @@ public class User implements java.io.Serializable {
 
 	public void setLastSubTime(Date lastSubTime) {
 		this.lastSubTime = lastSubTime;
+	}
+
+	@Override
+	public String toString() {
+		return "User [userName=" + userName + ", userRealName=" + userRealName
+				+ ", userPassword=" + userPassword + "]";
 	}
 
 }

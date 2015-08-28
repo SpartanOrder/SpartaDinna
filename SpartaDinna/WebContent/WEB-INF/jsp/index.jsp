@@ -8,6 +8,8 @@
 </head>
 <body>
 	欢迎进来了！
-	<a href="TestAction">点击进来创建数据表</a>
+	<a href="dishAction_save">点击进来dishAction</a>
+	<a
+		href="userAction_save?userName=5306506813&userRealName=xiaoming&userPassword=123456">点击进来userAction创建一个用户</a>
 </body>
 </html>

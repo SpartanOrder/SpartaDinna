@@ -12,11 +12,17 @@
 	<constant name="struts.devMode" value="true" />
 	<!-- 设置Struts2是否支持使用动态方法调用，默认为true -->
 	<constant name="struts.enable.DynamicMethodInvocation" value="false" />
-	<package name="lee" extends="struts-default">
+	<package name="dinna" extends="struts-default">
 		<!-- 定义处理用户请求的Action，该Action的class属性不是实际处理类 , 而是Spring容器中的Bean实例的ID -->
-		<action name="TestAction" class="com.sparta.dinna.action.TestAction">
-			<result name="error">/WEB-INF/jsp/error.jsp</result>
-			<result>/WEB-INF/jsp/success.jsp</result>
+		<action name="dishAction_*" class="com.sparta.dinna.action.DishAction"
+			method="{1}"
+		>
+			<result>/WEB-INF/jsp/index.jsp</result>
+		</action>
+		<action name="userAction_*" class="com.sparta.dinna.action.UserAction"
+			method="{1}"
+		>
+			<result>/WEB-INF/jsp/index.jsp</result>
 		</action>
 		<!-- 让用户直接访问该应用时列出所有视图页面 -->
 		<action name="*">

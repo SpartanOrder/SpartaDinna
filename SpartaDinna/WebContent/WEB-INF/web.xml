@@ -1,13 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-	xmlns="http://xmlns.jcp.org/xml/ns/javaee" xmlns:web="http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
-	xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee 
-	http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
-	version="3.1"
+	xmlns="http://java.sun.com/xml/ns/javaee"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd"
+	id="WebApp_ID" version="3.0"
 >
-	<!-- 制定spring配置文件 <context-param> <param-name>contextConfigLocation</param-name> 
-		多个配置文件之间用,隔开 <param-value>classpath:applicationContext.xml</param-value> 
-		</context-param> -->
+	<display-name>Shopping</display-name>
+	<!-- 制定spring配置文件 -->
+	<context-param>
+		<param-name>contextConfigLocation</param-name>
+		<!-- 多个配置文件之间用,隔开 -->
+		<param-value>classpath:applicationContext.xml,classpath:applicationContextDao.xml</param-value>
+	</context-param>
 	<!-- 使用ContextLoaderListener初始化Spring容器，让Spring容器随Web应用的启动而回调自定义方法而自动启动Spring容器， 
 		并且会自动查找WEB-INF/下的applicationContext.xml文件 -->
 	<listener>
